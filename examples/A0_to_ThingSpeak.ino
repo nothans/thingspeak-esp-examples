@@ -69,7 +69,7 @@ void loop() {
     client.println("Connection: close");
     client.println("X-THINGSPEAKAPIKEY: " + writeAPIKey);
     client.println("Content-Type: application/x-www-form-urlencoded");
-    client.println("Content-Length: " + body.length());
+    client.println("Content-Length: " + String(body.length()));
     client.println("");
     client.print(body);
 
