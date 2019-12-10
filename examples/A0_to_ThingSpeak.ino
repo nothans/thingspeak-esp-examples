@@ -78,6 +78,6 @@ void loop() {
     Serial.println("Problem writing to channel. HTTP error code " + String(httpCode));
   }
 
-  // Wait 20 seconds to uodate the channel again
+  // Wait 20 seconds to update the channel again
   delay(20000);
 }
